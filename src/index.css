@@ -1,0 +1,46 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COMMON */
+/* Layout */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Header */
+header {
+  background-color: #efecec;
+}
+
+h1 {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
