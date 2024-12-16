@@ -23,7 +23,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 /* Header */
@@ -33,14 +33,35 @@ header {
 
 h1 {
   padding: 20px;
-  margin-bottom: 20px;
 }
 
+/* BUTTONS */
 button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: blue;
-  color: white;
+  background-color: #3b3bfb;
+  color: #ffffff;
   border-radius: 10px;
+  margin: 40px 0;
+}
+
+button.active {
+  background-color: #ffd700;
+  color: #000000;
+}
+
+/* CARD */
+.card {
+  border: 1px solid #d0cfcf;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  line-height: 1.5;
 }
