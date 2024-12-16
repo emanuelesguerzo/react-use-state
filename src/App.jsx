@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
 
   return (
     <>
@@ -17,7 +17,10 @@ function App() {
             <li key={curLanguage.id}>
               <button 
                 onClick={() => setSelectedLanguage(curLanguage)}
-                className={selectedLanguage.id === curLanguage.id ? "active" : ""}
+                className={
+                  selectedLanguage && 
+                  selectedLanguage.id === curLanguage.id ? "active" : ""
+                }
               >
                 {curLanguage.title}
               </button>
@@ -27,8 +30,16 @@ function App() {
       </ul>
 
       <div className="container card">
-        <h2>{selectedLanguage.title}</h2>
-        <p>{selectedLanguage.description}</p>
+        {selectedLanguage ? (
+          <>
+            <h2>{selectedLanguage.title}</h2>
+            <p>{selectedLanguage.description}</p>
+          </>
+        ) : (
+          <>
+            <p>Nessun linguaggio selezionato. Seleziona un linguaggio dalla lista.</p>
+          </>
+        )}
       </div>
     </>
   )
