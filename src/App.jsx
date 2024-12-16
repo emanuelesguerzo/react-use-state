@@ -4,9 +4,7 @@ import languages from "./data/languages";
 import { useState } from "react";
 
 function App() {
-
   const [selectedLanguage, setSelectedLanguage] = useState(null);
-
   return (
     <>
       <header>

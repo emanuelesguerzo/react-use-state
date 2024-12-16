@@ -1,0 +1,16 @@
+/* BUTTONS */
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #3b3bfb;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+/* Active Button */
+button.active {
+    background-color: #ffd700;
+    color: #000000;
+}

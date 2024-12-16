@@ -1,8 +1,10 @@
+import style from "./LanguageButton.module.css"
+
 function LanguageButton({ language, isActive, onClick }) {
     return (
         <button
             onClick={onClick}
-            className={isActive ? "active" : ""}
+            className={isActive ? style.active : ""}
         >
             {language.title}
         </button>

@@ -1,6 +1,8 @@
+import style from "./LanguageCard.module.css"
+
 function LanguageCard({ selectedLanguage }) {
     return (
-        <div className="container card">
+        <div className={`container ${style.card}`}>
             {selectedLanguage ? (
             <>
                 <h2>{selectedLanguage.title}</h2>
